@@ -45,9 +45,9 @@ Finish :
 Include in your config/hooks.php the code below:
 
 $hook['post_controller_constructor'] = array(
-    'class'    => 'controle_acesso',
+    'class'    => 'acl',
     'function' => 'permission_validation',
-    'filename' => 'controle_acesso.php',
+    'filename' => 'acl.php',
     'filepath' => 'models'
 );  
 
