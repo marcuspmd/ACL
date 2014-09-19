@@ -41,7 +41,7 @@ Line 47: $directoryList = FCPATH.'application/controllers/';
 
 Run the url: {your_url}/validation
 
-<img style="max-width:100%;" src="https://raw.github.com/scorpionslh/ACL/master/screenshot/validation.png">
+<img style="max-width:100%;" src="https://raw.github.com/scorpionslh/ACL/master/screenshot/validation2.png">
 
 <img style="max-width:100%;" src="https://raw.github.com/scorpionslh/ACL/master/screenshot/validation1.png">
 
