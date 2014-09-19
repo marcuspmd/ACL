@@ -16,12 +16,6 @@ CREATE TABLE `routine` (
   UNIQUE KEY `link_UNIQUE` (`link`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ;
 
-CREATE TABLE `module` (
-  `id_module` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `description` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id_module`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ;
-
 CREATE TABLE `permission` (
   `id_permission` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `routine_id_routine` int(10) unsigned NOT NULL,
@@ -48,7 +42,7 @@ Line 47: $directoryList = FCPATH.'application/controllers/';
 
 <img style="max-width:100%;" src="https://raw.github.com/scorpionslh/ACL/master/screenshot/validation1.png">
 
-<h1>Finish : </h1>
+<h1>Last Step : </h1>
 
 Include in your config/hooks.php the code below:
 ```php
