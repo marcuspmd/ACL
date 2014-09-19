@@ -1,4 +1,4 @@
-First step: 
+<h1> First step: </h1>
 
 Copy all files in your respectives folders.
 
@@ -31,17 +31,21 @@ CREATE TABLE `permission` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ;
 ```
 
-Second Step:
+<h1>Second Step: </h1>
 
-If need change the config your application folder on file. (Controller) - validation.php
+if you needed change any configuration of the application folder. (Controller) - validation.php
+
 ```php
 Line 47: $directoryList = FCPATH.'application/controllers/';
 ```
 
 Run the url: {your_url}/validation
 
+<img style="max-width:100%;" src="https://raw.github.com/scorpionslh/ACL/master/screenshot/validation.png">
 
-Finish :
+<img style="max-width:100%;" src="https://raw.github.com/scorpionslh/ACL/master/screenshot/validation1.png">
+
+<h1>Finish : </h1>
 
 Include in your config/hooks.php the code below:
 ```php
@@ -54,6 +58,4 @@ $hook['post_controller_constructor'] = array(
 ```
 Congratulations, now your system has ACL.
 
-Screenshot 
 
-<img style="max-width:100%;" src="https://raw.github.com/scorpionslh/ACL/master/screenshot/validation.png">
