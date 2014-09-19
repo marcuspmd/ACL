@@ -17,7 +17,9 @@ class acl extends CI_Model {
         $ACL_USER = $this->session->userdata('id_user');
 
         if ($ACL_USER == '') {
+            $this->session->flashdata('error', 'User is not logged.');
             redirect($this->page_redirect);
+            exit;
         } else {
             $white_list = array();
             $white_list[] = 'validation';
@@ -27,7 +29,12 @@ class acl extends CI_Model {
             if ($this->validate_white_list($url))
               return TRUE;
 
-            return $this->validate_permission($ACL_USER, $url);
+            if ($this->validate_permission($ACL_USER, $url) === false){
+                $this->session->flashdata('error', 'User don\'t has permission.');
+                redirect($this->page_redirect);
+                exit;
+            }
+            return true;
         }
     }
 
