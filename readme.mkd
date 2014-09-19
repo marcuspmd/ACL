@@ -34,9 +34,11 @@ CREATE TABLE `permission` (
 
 <h1>Second Step: </h1>
 
-if you needed change any configuration of the application folder. (Controller) - validation.php
+if you needed change any configuration of the application folder. 
 
 ```php
+Controllers/validation.php
+
 Line 47: $directoryList = FCPATH.'application/controllers/';
 ```
 
@@ -57,6 +59,15 @@ $hook['post_controller_constructor'] = array(
     'filepath' => 'models'
 );  
 ```
+
+and configure here your user id session.
+```php
+Models/acl.php
+
+Line 17: $ACL_USER = $this->session->userdata('id_user');
+```
+
+
 Congratulations, now your system has ACL.
 
 
