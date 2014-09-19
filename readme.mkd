@@ -2,7 +2,7 @@
 
 Copy all files in your corresponding folders.
 
-Create a database running this following SQL
+Create the table running this following SQL
 
 ```sql
 CREATE TABLE `routine` (
