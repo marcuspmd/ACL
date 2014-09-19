@@ -156,7 +156,7 @@ class validation extends CI_Controller {
         $url .= (!empty($folder))? $folder.'/' : '';
         $url .= (!empty($class))? $class.'/' : '';
         $url .= (!empty($function))? $function : '';
-        $url .= (!empty($folder))? '' : '/';
+        
 
         return mb_strtolower($url);
     }
