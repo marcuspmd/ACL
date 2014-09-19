@@ -52,3 +52,7 @@ $hook['post_controller_constructor'] = array(
 );  
 
 Congratulations, now your system has ACL.
+
+Screenshot 
+
+![alt tag](https://raw.github.com/scorpionslh/ACL/master/screenshot/validation.png)
