@@ -2,7 +2,8 @@
 
 Copy all files in your corresponding folders.
 
-Create a database with your sql below.
+Create a database running this following SQL
+
 ```sql
 CREATE TABLE `routine` (
   `id_routine` int(10) unsigned NOT NULL AUTO_INCREMENT,
