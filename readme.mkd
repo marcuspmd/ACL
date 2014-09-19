@@ -1,6 +1,6 @@
 <h1> First step: </h1>
 
-Copy all files in your respectives folders.
+Copy all files in your corresponding folders.
 
 Create a database with your sql below.
 ```sql
@@ -13,7 +13,7 @@ CREATE TABLE `routine` (
   `whitelist` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_routine`),
   UNIQUE KEY `link_UNIQUE` (`link`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ;
 
 CREATE TABLE `module` (
   `id_module` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -39,7 +39,7 @@ if you needed change any configuration of the application folder. (Controller) -
 Line 47: $directoryList = FCPATH.'application/controllers/';
 ```
 
-Run the url: {your_url}/validation
+<strong>Run the url: {your_url}/validation</strong>
 
 <img style="max-width:100%;" src="https://raw.github.com/scorpionslh/ACL/master/screenshot/validation2.png">
 
