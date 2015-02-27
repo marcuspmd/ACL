@@ -124,7 +124,8 @@ class validation extends CI_Controller {
         $perm_of_database = $this->get_db_routines(1);
         $i = 0;
         foreach($perm_of_database as $key){
-            if ($this->user_db_permission($key['id_routine'],$user)){
+          $aux_check_permission = $this->user_db_permission($key['id_routine'],$user);
+            if ($aux_check_permission){
                 $check_permission = 'checked="checked"';
             }else{
                 $check_permission = '';
